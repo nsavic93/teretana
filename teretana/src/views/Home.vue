@@ -34,6 +34,7 @@ export default {
   background-position: bottom center;
 }
 .container {
+  position: relative;
   width: 100%;
   padding-top: 200px;
   display: flex;
@@ -61,5 +62,22 @@ export default {
 }
 .home_top_h1 h1 strong {
   color: #f36100;
+}
+
+@media only screen and (max-width: 600px) {
+  .home_top {
+    width: 100%;
+    height: 1040px;
+    background: url("../assets/Slika3.jpg");
+    background-size: cover;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    /* padding-top: 355px; */
+    background-position: bottom right;
+  }
+  .home_top_h1 {
+    max-width: 100%;
+  }
 }
 </style>

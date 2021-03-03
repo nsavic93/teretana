@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="about_top">
-      <h1>ABOUT US</h1>
+      <h1>Gallery</h1>
     </div>
   </div>
 </template>
