@@ -18,9 +18,9 @@
     <div id="nav">
       <router-link to="/">Home</router-link>
       <router-link to="/about">About Us</router-link>
-      <router-link to="/about">Services</router-link>
-      <router-link to="/about">Galery</router-link>
-      <router-link to="/about">Contact</router-link>
+      <router-link to="/services">Services</router-link>
+      <router-link to="/gallery">Galery</router-link>
+      <router-link to="/contact">Contact</router-link>
     </div>
     <router-view class="view" />
   </div>
