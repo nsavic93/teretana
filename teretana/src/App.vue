@@ -2,6 +2,7 @@
   <div id="app">
     <div class="nav_menu_ham" v-if="!show">
       <button class="menu_button" @click="openNav()">
+      <!--NEMANJA -->
         <i class="fas fa-bars"></i>
       </button>
     </div>

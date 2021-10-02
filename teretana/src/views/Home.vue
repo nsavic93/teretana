@@ -43,24 +43,80 @@
     </div>
     <div class="services_offer">
       <div class="services">
-        <div class="service"><div class="service_plan"><h2>Skidanje <br> kilograma</h2></div></div>
-        <div class="service"><div class="service_plan"><h2>Kardio <br> fitnes</h2></div></div>
-        <div class="service"><div class="service_plan"><h2>Povecanje <br> misica</h2></div></div>
-        <div class="service"><div class="service_plan"><h2>Nesto <br> peto</h2></div></div>
+        <div class="service-1">
+          <div class="service-1-title">
+            <h2>Kardio</h2>
+          </div>
+          <div class="service-1-text">
+            <p>
+              Kardio trening je najefikasniji način za skidanje masnih naslaga,
+              postizanje i održavanja kondicije. Kardio-vežbe su neophodne za
+              svaki efikasan program treninga jer podstiču sagorevanje masnoća
+              ali su ujedno dobre i za celokupno zdravlje organizma.
+            </p>
+          </div>
+          <div class="service-button">
+            <button>More info</button>
+          </div>
+        </div>
+        <div class="service-1">
+          <div class="service-1-title">
+            <h2>Kardio</h2>
+          </div>
+          <div class="service-1-text">
+            <p>
+              Kardio trening je najefikasniji način za skidanje masnih naslaga,
+              postizanje i održavanja kondicije. Kardio-vežbe su neophodne za
+              svaki efikasan program treninga jer podstiču sagorevanje masnoća
+              ali su ujedno dobre i za celokupno zdravlje organizma.
+            </p>
+          </div>
+          <div class="service-button">
+            <button>More info</button>
+          </div>
+        </div>
+        <div class="service-1">
+          <div class="service-1-title">
+            <h2>Kardio</h2>
+          </div>
+          <div class="service-1-text">
+            <p>
+              Kardio trening je najefikasniji način za skidanje masnih naslaga,
+              postizanje i održavanja kondicije. Kardio-vežbe su neophodne za
+              svaki efikasan program treninga jer podstiču sagorevanje masnoća
+              ali su ujedno dobre i za celokupno zdravlje organizma.
+            </p>
+          </div>
+          <div class="service-button">
+            <button>More info</button>
+          </div>
+        </div>
+        <!-- <div class="service"><div class="service_plan plan_1"><h2>Skidanje <br> kilograma</h2></div></div>
+        <div class="service"><div class="service_plan plan_2"><h2>Kardio <br> fitnes</h2></div></div>
+        <div class="service"><div class="service_plan plan_3"><h2>Povecanje <br> misica</h2></div></div>
+        <div class="service"><div class="service_plan plan_4"><h2>Nesto <br> peto</h2></div></div> -->
       </div>
     </div>
     <div class="contact">
       <div class="contact_h2"><h2>Kontakt</h2></div>
       <div class="contact_form">
-        <input type="text" placeholder="Ime">
-        <input type="text" placeholder="E-mail">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Tvoja poruka ovde..."></textarea>
+        <input type="text" placeholder="Ime" />
+        <input type="text" placeholder="E-mail" />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Tvoja poruka ovde..."
+        ></textarea>
         <button class="contact_submit">Posalji</button>
       </div>
       <div class="contact_info">
         <div><p>Tel: 0606665445</p></div>
         <div><p>Mail: nsasdn@gmail.com</p></div>
-        <div><i class="fab fa-instagram"></i><i class="fab fa-facebook-square"></i></div>
+        <div>
+          <i class="fab fa-instagram"></i><i class="fab fa-facebook-square"></i>
+        </div>
       </div>
     </div>
   </div>
@@ -127,6 +183,7 @@ export default {
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 5%;
+  padding-bottom: 5%;
 }
 .about_h1 {
   width: 100%;
@@ -167,27 +224,74 @@ h2 {
 .services_offer {
   width: 100%;
   display: flex;
-
+  background-color: #eff2f5;
   justify-content: center;
 }
 .services {
   padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
-  width: 50%;
-  flex-wrap: wrap;
+  width: 70%;
+  /* flex-wrap: wrap; */
 }
 .service {
+  display: flex;
+  justify-content: center;
   /* margin: 5px; */
   width: 50%;
-  height: 300px;
+  height: 400px;
   /* background-color: red; */
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   box-sizing: border-box;
-  padding: 5px;
+  /* padding: 5px; */
+}
+.service-1 {
+  width: 33%;
+  /* height: 300px; */
+  border: 1px solid #6d6d6d;
+  border-radius: 3px;
+  margin: 5px;
+  box-sizing: border-box;
+  background-color: white;
+}
+.service-1-title {
+  padding: 50px;
+  padding-bottom: 25px;
+}
+.service-1-title h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+}
+.service-1-text {
+  padding: 50px;
+  padding-top: 0;
+}
+.service-1-text p {
+  font-family: "Poppins", sans-serif;
+}
+.service-button {
+  padding: 40px;
+  padding-top: 0;
+}
+.service-button button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  background-color: #219ebc;
+  border-radius: 3px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.service-button button:hover {
+  cursor: pointer;
 }
 .service_plan {
+  box-sizing: border-box;
+  margin: 10px;
   width: 100%;
-  height: 300px;
+  height: 400px;
   /* background-color: white; */
   color: rgb(250, 84, 7);
   font-family: "Oswald", sans-serif;
@@ -196,8 +300,40 @@ h2 {
   align-items: center;
   justify-items: center;
   justify-content: center;
+  /* background-image: url("../assets/thumb2-training-bodybuilding-fitness-gym-sport.jpg"); */
+}
+.plan_1 {
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-position: center center; */
+  background-size: cover;
   background-image: url("../assets/thumb2-training-bodybuilding-fitness-gym-sport.jpg");
 }
+
+.plan_2 {
+  background-size: cover;
+  background-image: url("../assets/Pull_Up_Alt1-1440x900.jpg");
+  /* background-size: 200%; */
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-position: center center; */
+}
+.plan_3 {
+  /* background-size: 200%; */
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-position: left center; */
+  background-size: cover;
+  background-image: url("../assets/360_F_320459487_SAvrvfR4NN4CkFQccj49rBfmiLoYebuw.jpg");
+}
+.plan_4 {
+  /* background-size: 200%; */
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-position: left center; */
+  background-image: url("../assets/RTQ3_06A0632.jpg");
+}
+
 .contact {
   padding-top: 50px;
   display: flex;
@@ -219,12 +355,12 @@ h2 {
   height: 25px;
   margin: 5px;
   border: 1px solid rgb(85, 85, 85);
-  font-family: 'Poppins';
+  font-family: "Poppins";
   border-radius: 5px;
 }
 .contact_form textarea {
   width: 70%;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   height: 150px;
   margin: 5px;
   border: 1px solid rgb(85, 85, 85);
@@ -236,7 +372,6 @@ h2 {
   background-color: tomato;
   border: none;
   border-radius: 5px;
-  
 }
 @media only screen and (max-width: 600px) {
   .home_top {
